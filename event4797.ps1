@@ -1,5 +1,5 @@
-$sql ="C:\Users\thibault\Desktop\sql.txt"	#chemin d'accès du fichier log
-$valeur ="C:\Users\thibault\Desktop\valeur.txt"	#chemin d'accès du fichier log
+$sql ="C:\TEMP\sql.txt"	#chemin d'accÃ¨s du fichier log
+$valeur ="C:\TEMP\valeur.txt"	#chemin d'accÃ¨s du fichier log
 $etat = Get-Content ($sql)
 if ($etat -eq 0){
 
@@ -15,6 +15,6 @@ if ($etat -eq 0){
     $DesktopTime = $DesktopTime.Ticks
     new-item $sql -type file -force
     new-item $valeur -type file -force
-    ADD-content -path $sql -value "1" 		#Rentre dans le fichier SQL le résultat
-    ADD-content -path $valeur -value "$DesktopTime" 		#Rentre dans le fichier SQL le résultat
+    ADD-content -path $sql -value "1" 		#Rentre dans le fichier SQL le rÃ©sultat
+    ADD-content -path $valeur -value "$DesktopTime" 		#Rentre dans le fichier SQL le rÃ©sultat
     }
