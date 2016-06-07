@@ -1,4 +1,4 @@
-#Cette version est destinée pour les ordiateurs sous Windows 8.1 et ne MARCHE QUE SOUS CET OS.
+#Cette version est destinÃ©e pour les ordiateurs sous Windows 8.1 et ne MARCHE QUE SOUS CET OS.
 
 # Retrieve main info
 $User = $env:username                           # Gives the username
@@ -6,9 +6,9 @@ $Computer = $env:computername                   # Gives the computer name
 $Current_Time = Get-Date                        # Gives the actual date
 
 # Path's declaration
-$log ="C:\Users\thibault\Desktop\log.txt"	    # Path of "log.txt". Memorising the results.
-$sql ="C:\Users\thibault\Desktop\sql.txt"       # Path of "sql.txt". Keeping in memory state of eventID 4797
-$valeur ="C:\Users\thibault\Desktop\valeur.txt"	# Path of "valeur.txt". Kepping in memory the time of eventID 4797
+$log ="C:\TEMP\log.txt"	    # Path of "log.txt". Memorising the results.
+$sql ="C:\TEMP\sql.txt"       # Path of "sql.txt". Keeping in memory state of eventID 4797
+$valeur ="C:\TEMP\valeur.txt"	# Path of "valeur.txt". Kepping in memory the time of eventID 4797
 
 # I. Get the time of the event "successful logon"
 
@@ -39,10 +39,10 @@ new-item $valeur -type file -force              # Reset value of event 4797
 
 # V.1 Enter the results in a log file
 new-item $log -type file -force
-ADD-content -path $log -value "`ntemps : $Current_Time" 			#Rentre dans le fichier log le résultat
-ADD-content -path $log -value "`nutilisateur : $User" 				#Rentre dans le fichier log le résultat
-ADD-content -path $log -value "`nordinateur : $Computer" 			#Rentre dans le fichier log le résultat
-ADD-content -path $log -value "`nlogon duration in seconds : $LogonDuration" 	#Rentre dans le fichier log le résultat
+ADD-content -path $log -value "`ntemps : $Current_Time" 			#Rentre dans le fichier log le rÃ©sultat
+ADD-content -path $log -value "`nutilisateur : $User" 				#Rentre dans le fichier log le rÃ©sultat
+ADD-content -path $log -value "`nordinateur : $Computer" 			#Rentre dans le fichier log le rÃ©sultat
+ADD-content -path $log -value "`nlogon duration in seconds : $LogonDuration" 	#Rentre dans le fichier log le rÃ©sultat
 
 # V.2 Enter the results in a sql base
 
