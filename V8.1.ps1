@@ -6,7 +6,7 @@ $Computer = $env:computername                   # Gives the computer name
 $Current_Time = Get-Date                        # Gives the actual date
 
 # Path's declaration
-$log ="C:\TEMP\log.txt"	    # Path of "log.txt". Memorising the results.
+$log ="C:\TEMP\log.txt"	      # Path of "log.txt". Memorising the results.
 $sql ="C:\TEMP\sql.txt"       # Path of "sql.txt". Keeping in memory state of eventID 4797
 $valeur ="C:\TEMP\valeur.txt"	# Path of "valeur.txt". Kepping in memory the time of eventID 4797
 
