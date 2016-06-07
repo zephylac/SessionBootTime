@@ -1,6 +1,6 @@
 # SessionBootTime
 # Warning
-This programm was designed for Windows 8.1. The 32-bits or 64-bits version doesn't matter. But since Windows is modifying his events between version. This programmm is only supposed to work under this version.
+This programm was designed for Windows 8.1. The 32-bits or 64-bits version doesn't matter. But since Windows is modifying his events between version. This programmm is only supposed to work under this version.  
 N.B: It will not work for Windows 7.
 
 # Description
