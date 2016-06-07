@@ -8,4 +8,4 @@ The purpose of this programm is the calculate the time of a session boot. To be 
 
 #Program
 It's constitued of two windows task (.xml files) added via the Task Scheduler and two script written in PowerShell (Windows kinda Shell). For the two first xml files can be imported in the Task Scheduler using  right-click.
-The two others just need to be place on the desktop. If you want tomodify that you need to edit the paths in the program.
+The two others just need to be place in C:\TEMP. YOu might need to create the TEMP directory.  If you want to modify that you need to edit the paths in the program.
